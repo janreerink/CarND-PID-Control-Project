@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 ## Discussion of PID value tuning
 
-The values were manually tuned, initially only for control of steering angles. The I-term was set to 0 (no reason to assume a bias), P and D were set to very small values and then modified. Some testing showed that a trade-off between sensitvity to corrections in curves and prevention of oscillations was required.
+The values were manually tuned, initially only for control of steering angles. The I-term was set to 0 (no reason to assume a bias), P and D were set to very small values and then modified. Some testing showed that a trade-off between sensitvity to errors and prevention of oscillations was required: higher values for the P-parameter improved the controller's ability to react to curves but also increased oscillations. The D-term was useful for reducing oscillations.
 
 To increase speed a second controller for throttle was added. Here the proportional correction of speed in situation with high error (curves) was important. The higher speed also required some tweaking of the steering-controller parameters.
 
