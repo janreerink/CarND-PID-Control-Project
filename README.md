@@ -7,6 +7,10 @@ The values were manually tuned, initially only for control of steering angles. T
 
 To increase speed a second controller for throttle was added. Here the proportional correction of speed in situation with high error (curves) was important. The higher speed also required some tweaking of the steering-controller parameters.
 
+The final input parameters were (-0.12, 0, -3.9) and (-0.3, 0, -0.1) for the two controllers. 
+
+[Example video](pid_lap.mp4)
+
 ---
 
 ## Dependencies
